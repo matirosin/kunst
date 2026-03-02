@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Your Name</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #ffffff;
+    display: flex;
+    color: #111;
+}
+
+.sidebar {
+    width: 240px;
+    padding: 60px 40px;
+    height: 100vh;
+    position: fixed;
+    border-right: 1px solid #eee;
+}
+
+.sidebar h1 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #111;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.main {
+    margin-left: 300px;
+    padding: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 60px;
+}
+
+.artwork img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.caption {
+    font-size: 13px;
+    margin-top: 12px;
+    line-height: 1.4;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h1>Your Name</h1>
+    <a href="#">Works</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</div>
+
+<div class="main">
+
+    <div class="artwork">
+        <img src="https://via.placeholder.com/600x800" alt="">
+        <div class="caption">
+            Untitled, 2026<br>
+            Oil on canvas
+        </div>
+    </div>
+
+    <div class="artwork">
+        <img src="https://via.placeholder.com/600x800" alt="">
+        <div class="caption">
+            Study in Red, 2025<br>
+            Acrylic
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
