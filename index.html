@@ -39,15 +39,22 @@
       font-size: 16px;
     }
 
-   .main {
+.main {
     margin-left: 300px;
-    padding: 0;
-    width: calc(100% - 300px);
+    padding: 80px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
 }
 
 .artwork {
-    padding: 80px 80px 60px 80px;
-    border-bottom: 0.5px solid #673c34;
+    flex: 1;
+    border-right: 0.5px solid rgba(103, 60, 52, 0.4);
+    padding-right: 40px;
+}
+
+.artwork:last-child {
+    border-right: none;
 }
 
 .artwork img {
@@ -58,8 +65,7 @@
 
 .caption {
     font-size: 14px;
-    margin-top: 18px;
-    line-height: 1.4;
+    margin-top: 16px;
 }
       box-sizing: border-box;
       width: 100%;
