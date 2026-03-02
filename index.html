@@ -1,149 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Your Name</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name</title>
 
-<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
 
-<style>
-body {
-    margin: 0;
-    background: #998731;
-    display: flex;
-    color: #673c34;
-    font-family: 'UnifrakturCook', cursive;
-}
+  <style>
+    body {
+      margin: 0;
+      background: #998731;
+      display: flex;
+      color: #673c34;
+      font-family: 'UnifrakturCook', cursive;
+    }
 
-.sidebar {
-    width: 240px;
-    padding: 60px 40px;
-    height: 100vh;
-    position: fixed;
-    border-right: 1px solid #673c34;
-}
+    .sidebar {
+      width: 240px;
+      padding: 60px 40px;
+      height: 100vh;
+      position: fixed;
+      border-right: 1px solid #673c34;
+      box-sizing: border-box;
+    }
 
-.sidebar h1 {
-    font-size: 22px;
-    font-weight: normal;
-    margin-bottom: 50px;
-}
+    .sidebar h1 {
+      font-size: 22px;
+      font-weight: normal;
+      margin-bottom: 50px;
+    }
 
-.sidebar a {
-    display: block;
-    text-decoration: none;
-    color: #673c34;
-    margin-bottom: 18px;
-    font-size: 16px;
-}
+    .sidebar a {
+      display: block;
+      text-decoration: none;
+      color: #673c34;
+      margin-bottom: 18px;
+      font-size: 16px;
+    }
 
-.main {
-    margin-left: 300px;
-    padding: 80px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 60px;
-}
+    .main {
+      margin-left: 300px;
+      padding: 80px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 60px;
+      box-sizing: border-box;
+      width: 100%;
+    }
 
-.artwork img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+    .artwork img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-.caption {
-    font-size: 14px;
-    margin-top: 12px;
-    line-height: 1.4;
-}
-</style>
-</head>
-<meta charset="UTF-8">
-<title>Your Name</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Georgia, serif;
-    background: #ffffff;
-    display: flex;
-    color: #111;
-}
-
-.sidebar {
-    width: 240px;
-    padding: 60px 40px;
-    height: 100vh;
-    position: fixed;
-    border-right: 1px solid #eee;
-}
-
-.sidebar h1 {
-    font-size: 18px;
-    font-weight: normal;
-    margin-bottom: 50px;
-}
-
-.sidebar a {
-    display: block;
-    text-decoration: none;
-    color: #111;
-    margin-bottom: 18px;
-    font-size: 14px;
-}
-
-.main {
-    margin-left: 300px;
-    padding: 80px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 60px;
-}
-
-.artwork img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.caption {
-    font-size: 13px;
-    margin-top: 12px;
-    line-height: 1.4;
-}
-</style>
+    .caption {
+      font-size: 14px;
+      margin-top: 12px;
+      line-height: 1.4;
+    }
+  </style>
 </head>
 
 <body>
-
-<div class="sidebar">
+  <div class="sidebar">
     <h1>Your Name</h1>
     <a href="#">Works</a>
     <a href="#">About</a>
     <a href="#">Contact</a>
-</div>
-
-<div class="main">
-
-  <div class="artwork">
-    <img src="work1.jpeg" alt="work1"
-      onerror="this.outerHTML='<div style=&quot;font-size:13px;&quot;>Missing image: <code>work1.jpeg</code></div>';">
-    <div class="caption">
-      Untitled, 2026<br>
-      Oil on canvas
-    </div>
   </div>
 
-  <div class="artwork">
-    <img src="work2.jpeg" alt="work2"
-      onerror="this.outerHTML='<div style=&quot;font-size:13px;&quot;>Missing image: <code>work2.jpeg</code></div>';">
-    <div class="caption">
-      Study in Red, 2025<br>
-      Acrylic
+  <div class="main">
+    <div class="artwork">
+      <img src="work1.jpeg" alt="work1"
+        onerror="this.outerHTML='<div style=&quot;font-size:13px;&quot;>Missing image: <code>work1.jpeg</code></div>';">
+      <div class="caption">
+        Untitled, 2026<br>
+        Oil on canvas
+      </div>
+    </div>
+
+    <div class="artwork">
+      <img src="work2.jpeg" alt="work2"
+        onerror="this.outerHTML='<div style=&quot;font-size:13px;&quot;>Missing image: <code>work2.jpeg</code></div>';">
+      <div class="caption">
+        Study in Red, 2025<br>
+        Acrylic
+      </div>
     </div>
   </div>
-
-</div>
-
 </body>
 </html>
