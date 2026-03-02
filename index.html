@@ -40,17 +40,15 @@
     }
 
 .main {
-    margin-left: 300px;
-    padding: 80px;
+    margin-left: 240px; /* same as sidebar width */
+    width: calc(100% - 240px);
     display: flex;
-    gap: 40px;
-    align-items: flex-start;
+    gap: 0;
 }
 
 .artwork {
     flex: 1;
-    border-right: 0.5px solid rgba(103, 60, 52, 0.4);
-    padding-right: 40px;
+    border-right: 0.5px solid rgba(103, 60, 52, 0.3);
 }
 
 .artwork:last-child {
@@ -59,13 +57,16 @@
 
 .artwork img {
     width: 100%;
-    height: auto;
+    height: 100vh;       /* fill screen height */
+    object-fit: cover;   /* crop nicely without distortion */
     display: block;
 }
 
 .caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
     font-size: 14px;
-    margin-top: 16px;
 }
       box-sizing: border-box;
       width: 100%;
