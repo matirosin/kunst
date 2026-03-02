@@ -1,106 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mati Rosin</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
 
   <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
 
- /* make widths behave predictably */
-* { box-sizing: border-box; }
+  <style>
+    * { box-sizing: border-box; }
 
-body {
-  margin: 0;
-  background: #998731;
-  color: #673c34;
-  font-family: 'UnifrakturCook', cursive;
-  overflow: hidden; /* prevents scrolling */
-}
+    body{
+      margin:0;
+      background:#998731;
+      color:#673c34;
+      font-family:'UnifrakturCook', cursive;
+      overflow:hidden;
+    }
 
-/* SIDEBAR */
-.sidebar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 240px;              /* TOTAL width including padding */
-  height: 100vh;
-  padding: 60px 40px;
-  border-right: 0.5px solid rgba(103, 60, 52, 0.4);
-  background: #998731;       /* same as page so it blends */
-}
+    .sidebar{
+      position:fixed;
+      top:0; left:0;
+      width:240px;
+      height:100vh;
+      padding:60px 40px;
+      border-right:0.5px solid rgba(103,60,52,0.35);
+      background:#998731;
+    }
 
-/* RIGHT SIDE AREA */
-.main {
-  margin-left: 240px;        /* EXACTLY matches sidebar width */
-  height: 100vh;
-  display: flex;
-  gap: 0;
-}
+    .sidebar h1{
+      margin:0 0 40px 0;
+      font-size:22px;
+      font-weight:normal;
+    }
 
-/* EACH COLUMN */
-.artwork {
-  flex: 1;
-  height: 100vh;
-  border-right: 0.5px solid rgba(103, 60, 52, 0.35);
-  display: flex;
-  flex-direction: column;
-}
+    .sidebar a{
+      display:block;
+      margin:0 0 16px 0;
+      color:#673c34;
+      text-decoration:none;
+      font-size:16px;
+    }
 
-.artwork:last-child {
-  border-right: none;
-}
+    .main{
+      margin-left:240px;
+      height:100vh;
+      display:flex;
+    }
 
-/* IMAGE fills the available space ABOVE caption */
-.artwork img {
-  width: 100%;
-  flex: 1;                   /* take remaining height */
-  object-fit: cover;         /* crop nicely, no distortion */
-  display: block;
-}
+    .artwork{
+      flex:1;
+      height:100vh;
+      border-right:0.5px solid rgba(103,60,52,0.25);
+      display:flex;
+      flex-direction:column;
+      min-width:0; /* prevents weird overflow */
+    }
+    .artwork:last-child{ border-right:none; }
 
-/* caption stays at the bottom, NOT overlapping */
-.caption {
-  padding: 14px 16px;
-  font-size: 14px;
-  line-height: 1.35;
-}
+    .artwork img{
+      width:100%;
+      flex:1;
+      object-fit:cover;
+      display:block;
+    }
+
+    .caption{
+      padding:14px 16px;
+      font-size:14px;
+      line-height:1.35;
+    }
+  </style>
 </head>
 
 <body>
   <div class="sidebar">
     <h1>Your Name</h1>
-    <a href="#">Works</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+    <a href="#works">Works</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </div>
 
-  <div class="main">
+  <div class="main" id="works">
     <div class="artwork">
-      <img src="work1.jpeg" alt="work1"
-        onerror="this.outerHTML='<div style=&quot;font-size:13px;&quot;>Missing image: <code>work1.jpeg</code></div>';">
-      <div class="caption">
-        Untitled, 2026<br>
-        Acrylic on canvas
-      </div>
+      <img src="work1.jpeg" alt="Work 1">
+      <div class="caption">Untitled, 2026<br>Acrylic on canvas</div>
     </div>
 
     <div class="artwork">
-      <img src="work2.jpeg" alt="work2"
-        onerror="this.outerHTML='<div style=&quot;font-size:13px;&quot;>Missing image: <code>work2.jpeg</code></div>';">
-      <div class="caption">
-        Untitled, 2024<br>
-        Acrylic on canvas
+      <img src="work2.jpeg" alt="Work 2">
+      <div class="caption">Untitled, 2024<br>Acrylic on canvas</div>
+    </div>
 
-        <div class="artwork">
-  <img src="work3.jpeg" alt="work3">
-  <div class="caption">
-    Untitled, 2026<br>
-    Acrylic on canvas
-  </div>
-</div>
-        
-      </div>
+    <div class="artwork">
+      <img src="work3.jpeg" alt="Work 3">
+      <div class="caption">Untitled, 2026<br>Acrylic on canvas</div>
     </div>
   </div>
 </body>
